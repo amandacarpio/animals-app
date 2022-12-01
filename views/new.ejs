@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/header.ejs') %>
+
+<body>
+    <div>
+    <form action="/animals" method="POST">
+    <label>
+        Species: <input type="text" name="species" placeholder="enter species"/>
+    </label>
+    <label>
+        Location: <input type="text" name="location" placeholder="where is this animal located?"/>
+    </label>
+    <label>
+        Life Expectancy: <input type="text" name="lifeExpectancy" placeholder="enter life expectancy">
+    </label>
+    <label>
+        Extinct? <input type="checkbox" name="extinct"/>
+    </label>
+    <label>
+        <input type="submit" value="Add Animal"/>
+    </label>
+    </form>
+    <a href="/animals"><button>Go Back To Homepage</button></a>
+    </div>
+</body>
+<style>
+    body {
+        background-color: bisque;
+    }
+    h1 {
+        color: brown;
+    }
+</style>
+</html>

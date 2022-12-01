@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/header.ejs') %>
+
+    <body>
+        
+        <h1>Animal Fun Facts</h1>
+
+        <% for(animal of animals) { %>
+            <a href="/animals/<%= animal._id%>">
+            <article>
+                <h3>
+                    <%= animal.species %> 
+                </h3>
+            </article>
+            </a>
+        <% } %>
+        
+        <a href="/animals/new"><button>Enter New Animal</button></a>
+
+    </body>
+
+    <style>
+        body {
+            background-color: bisque;
+        }
+        h1 {
+            color: brown;
+        }
+    </style>
+
+    </html>
